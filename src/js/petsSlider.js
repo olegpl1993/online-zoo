@@ -1,5 +1,4 @@
 export function petsSlider() {
-    console.log('Hell world');
     const btnL = document.querySelector('.favorite__btnL'); //кнопка влево
     const btnR = document.querySelector('.favorite__btnR'); //кнопка вправо
     btnL.addEventListener('click', clickLeft);
@@ -7,7 +6,6 @@ export function petsSlider() {
 }
 
 function clickLeft() {
-    console.log('left')
     const btnL = document.querySelector('.favorite__btnL'); //кнопка влево
     btnL.removeEventListener('click', clickLeft) //удаляем слушатель с кнопки
 
@@ -29,7 +27,6 @@ function clickLeft() {
 }
 
 function clickRight() {
-    console.log('right')
     const btnR = document.querySelector('.favorite__btnR'); //кнопка вправо
     btnR.removeEventListener('click', clickRight) //удаляем слушатель с кнопки
 
